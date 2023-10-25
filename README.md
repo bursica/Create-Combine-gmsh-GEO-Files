@@ -5,6 +5,7 @@
 The "Create or Combine gmsh GEO Files" program allows you to combine multiple GEO files into a single GEO file or generate a GEO file from an STP file. Generation requires point cluster, which can form quadrilateral grid. Point cluster represents section shape of object to be revolved around z axis (vector: 0, 0, 1) through origin (Figure 1).
 
 ![Figure 1](./images/image1.png)
+
 *Figure 1: Section shape with quadrilateral grid*
 
 
@@ -53,13 +54,14 @@ After selecting the code execution option, click the "Combine" or "Execute" butt
 - If you selected "Combine GEO Files", the program will combine the GEO files and display the path of the output file in the console.
 - If you selected "Create GEO from STP", the program will ask for additional input to customize the generated GEO file.
 
-The program will ask you to choose the number of cluster repetitions within a full circle.
-Next, it will ask you to choose the number of consecutive cluster repetitions.
-Next, it will ask you to choose the number of consecutive empty (cluster) repetitions after drawn cluster repetitions.
-Then, it will ask you for the number of the first cluster offset within the total instances.
-The program will display the available points in groups and ask you to choose points within a 4-point sequence by entering their numbers (Figure 2).
+- The program will ask you to choose the number of cluster repetitions within a full circle.
+- Next, it will ask you to choose the number of consecutive cluster repetitions.
+- Next, it will ask you to choose the number of consecutive empty (cluster) repetitions after drawn cluster repetitions.
+- Then, it will ask you for the number of the first cluster offset within the total instances.
+- The program will display the available points in groups and ask you to choose points within a 4-point sequence by entering their numbers (Figure 2).
 
 ![Figure 2](./images/image2.png)
+
 *Figure 2: Example; Start point lower left, direction is clockwise (CW), last two points are points for next adjacent quadrilateral: 1 2 3 5. Other 3 possible directions to try in case of crossing lines: lower right, direction CCW; upper left, direction CW; upper right, direction CCW.*
 
 Finally, the program will ask if you want to change the name of the chosen key, allowing you to enter a new name or press Enter to keep it as is.
@@ -98,4 +100,5 @@ For any further assistance or inquiries, please contact the program developer or
 
 
 ![Figure 3](./images/image3.png)
+
 *Figure 3: Final result, Hexahedral mesh in combination with surface quads.*
