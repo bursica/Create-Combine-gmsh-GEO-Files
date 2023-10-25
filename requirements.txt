@@ -1,0 +1,11 @@
+tkinterdnd2
+Pillow
+networkx
+matplotlib
+numpy
+
+# For seting up the libraries:
+# pip install -r requirements.txt
+
+# "w"ithjin Debian-based system you migth install:
+# sudo apt-get install python3-tk
