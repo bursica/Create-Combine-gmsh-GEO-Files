@@ -4,7 +4,8 @@
 
 The "Create or Combine gmsh GEO Files" program allows you to combine multiple GEO files into a single GEO file or generate a GEO file from an STP file. Generation requires point cluster, which can form quadrilateral grid. Point cluster represents section shape of object to be revolved around z axis (vector: 0, 0, 1) through origin (Figure 1).
 
-![Figure 1](./images/image1.png) Section shape with quadrilateral grid
+![Figure 1](./images/image1.png)
+*Figure 1: Section shape with quadrilateral grid*
 
 
 GEO files are commonly used in finite element analysis software for defining the geometry and mesh of a model. This program provides a graphical user interface (GUI) for easy file selection and execution of the code.
@@ -59,8 +60,8 @@ Next, it will ask you to choose the number of consecutive empty (cluster) repeti
 Then, it will ask you for the number of the first cluster offset within the total instances.
 The program will display the available points in groups and ask you to choose points within a 4-point sequence by entering their numbers (Figure 2).
 
-
-![Figure 2](./images/image2.png), Example: Start point lower left, direction is clockwise (CW), last two points are points for next adjacent quadrilateral: 1 2 3 5. Other 3 possible directions to try in case of crossing lines: lower right, direction CCW; upper left, direction CW; upper right, direction CCW.
+![Figure 2](./images/image2.png)
+*Figure 2: Example; Start point lower left, direction is clockwise (CW), last two points are points for next adjacent quadrilateral: 1 2 3 5. Other 3 possible directions to try in case of crossing lines: lower right, direction CCW; upper left, direction CW; upper right, direction CCW.*
 
 Finally, the program will ask if you want to change the name of the chosen key, allowing you to enter a new name or press Enter to keep it as is.
 The program will generate the GEO file accordingly and display the path of the output file in the console.
@@ -69,14 +70,10 @@ The program will generate the GEO file accordingly and display the path of the o
 ## 5. Notes
 
 - The program assumes that the input GEO files are formatted correctly and compatible with the code logic.
-
 - The code logic includes parsing and manipulating the input GEO files to perform the combine or execute operation.
-
-The program supports the combine operation for GEO files and the execute operation for STP files.
-
-The program utilizes various Python libraries (e.g., tkinter, networkx, matplotlib) to provide the GUI and perform the necessary operations.
-
-The program also includes some user prompts for additional input or settings during execution.
+- The program supports the combine operation for GEO files and the execute operation for STP files.
+- The program utilizes various Python libraries (e.g., tkinter, networkx, matplotlib) to provide the GUI and perform the necessary operations.
+- The program also includes some user prompts for additional input or settings during execution.
 
 
 ## 6. Limitations
@@ -96,7 +93,10 @@ Check if there are any error messages displayed in the console that indicate the
 Verify that the input files are in the correct format and compatible with the program's logic.
 
 
-## 8. Support For any further assistance or inquiries, please contact the program developer or refer to the program's documentation.
+## 8. Support
+
+For any further assistance or inquiries, please contact the program developer or refer to the program's documentation.
 
 
-![Figure 3](./images/image3.png), Final result, Hexahedral mesh in combination with surface quads.
+![Figure 3](./images/image3.png)
+*Figure 3: Final result, Hexahedral mesh in combination with surface quads.*
